@@ -1,1 +1,2 @@
-My main portfolio of projects / bio. 
+My main portfolio of projects / bio.
+

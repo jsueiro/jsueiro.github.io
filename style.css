@@ -1,0 +1,139 @@
+@import url("all.min.css");
+
+body,
+html {
+    background-color: #2f3437;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+    color: rgb(235, 239, 243);
+    text-align: center;
+    font-weight: 900;
+    font-size: 350%;
+    line-height: 10px;
+
+}
+
+p {
+    color: rgb(222, 227, 237);
+    /* text-transform: uppercase lowercase */
+    line-height: 20px;
+}
+
+a,
+a:visited {
+    color: rgb(222, 227, 237);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(242, 180, 115);
+}
+
+footer {
+    color: darkgrey;
+
+}
+
+.highlighted {
+
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 1em;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.subscript {
+
+    clear: both;
+
+    color: darkgrey;
+    font-size: x-small;
+
+}
+
+hr {
+    margin: 20px auto;
+    color: #f05f44;
+    border: 3px solid #f05f44;
+    max-width: 65px;
+    opacity: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+}
+
+.buffer {
+    height: 10rem;
+}
+
+.half-buffer {
+    height: 5rem;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.icon>.label {
+    display: none;
+}
+
+.icon:before {
+    line-height: inherit;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 6 Brands';
+}
