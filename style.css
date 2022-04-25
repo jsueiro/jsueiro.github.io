@@ -3,6 +3,7 @@
 body,
 html {
     background-color: #2f3437;
+    color: rgb(235, 239, 243);
     font-family: 'Lato', sans-serif;
     width: 100%;
     height: 100%;
@@ -10,18 +11,11 @@ html {
 }
 
 h1 {
-    color: rgb(235, 239, 243);
-    text-align: center;
+
     font-weight: 900;
     font-size: 350%;
     line-height: 10px;
 
-}
-
-p {
-    color: rgb(222, 227, 237);
-    /* text-transform: uppercase lowercase */
-    line-height: 20px;
 }
 
 a,
@@ -34,50 +28,40 @@ a:hover {
     color: rgb(242, 180, 115);
 }
 
-footer {
-    color: darkgrey;
-
-}
 
 .highlighted {
 
-    text-align: center;
     font-size: x-large;
 
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* containers */
 
-}
-
-.container {
+.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    gap: 1em;
+    gap: 2em;
+    padding-top: 10em;
+}
+
+
+.main {
+
+    text-align: center;
 
 }
 
-.row {
+.links {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 1em;
-}
+    gap: 10px;
 
-.subscript {
-
-    clear: both;
-
-    color: darkgrey;
-    font-size: x-small;
 
 }
+
+/* ... */
 
 hr {
     margin: 20px auto;
@@ -85,21 +69,6 @@ hr {
     border: 3px solid #f05f44;
     max-width: 65px;
     opacity: 1;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    list-style: none;
-}
-
-.buffer {
-    height: 10rem;
-}
-
-.half-buffer {
-    height: 5rem;
 }
 
 .icon {
@@ -120,10 +89,6 @@ ul {
     font-family: 'Font Awesome 6 Free';
     font-weight: 400;
     font-size: 30px;
-}
-
-.icon>.label {
-    display: none;
 }
 
 .icon:before {
