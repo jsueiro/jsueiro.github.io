@@ -19,10 +19,15 @@ html {
 .main-header {
     /* border: 1px solid white; */
     padding-top: 2em;
+
 }
 
 .mh-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
     margin: 0 0 -10px;
+    gap: 1em;
 }
 
 .container {
@@ -80,7 +85,7 @@ html {
     width: 30%;
     padding: 10px;
     line-height: 25px;
-    vertical-align: top;
+
     font-size: 1.2rem;
 
     text-align: center;
@@ -120,8 +125,8 @@ a:hover {
 hr {
     /* margin: 20px auto; */
     /* color: #f05f44; */
-    border: 0.5px dashed darkgray;
-    max-width: 60vw;
+    border: 0.5px dashed rgb(77, 76, 76);
+    max-width: 65vw;
     opacity: 1;
 }
 
@@ -156,4 +161,32 @@ hr {
 
 .icon.brands:before {
     font-family: 'Font Awesome 6 Brands';
+}
+
+/*   */
+
+.image {
+    border-radius: 0.35em;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    border-radius: 0.35em;
+    display: block;
+}
+
+.image.avatar {
+    border-radius: 100%;
+    width: 6.25em;
+}
+
+.image.avatar:before {
+    display: none;
+}
+
+.image.avatar img {
+    border-radius: 100%;
+    width: 100%;
 }
