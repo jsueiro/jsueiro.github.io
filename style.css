@@ -5,17 +5,105 @@ html {
     background-color: #2f3437;
     color: rgb(235, 239, 243);
     font-family: 'Lato', sans-serif;
+
     /*width: 100%;*/
     height: 100%;
     margin: 0;
+    font-size: 1rem;
 
 }
+
+
+
+/* header */
+.main-header {
+    /* border: 1px solid white; */
+    padding-top: 2em;
+}
+
+.mh-logo {
+    margin: 0 0 -10px;
+}
+
+.container {
+    width: 960px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav ul {
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: .5em .5em;
+}
+
+@media (min-width:960px) {
+    .main-header .container {
+        justify-content: space-between;
+    }
+}
+
+
+/* section main */
+.section-main {
+    /* font-family: 'Merriweather', serif; */
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+
+
+
+}
+
+.left-row {
+    width: 30%;
+    padding: 10px;
+    line-height: 25px;
+    vertical-align: top;
+    font-size: 1.2rem;
+
+    text-align: center;
+
+}
+
+.right-row {
+    width: 70%;
+    padding: 10px;
+    line-height: 25px;
+    vertical-align: top;
+
+
+
+}
+
+/* -- */
 
 h1 {
 
     font-weight: 900;
-    font-size: 350%;
-    line-height: 10px;
+    font-size: 2.5rem;
+    line-height: 0px;
 
 }
 
@@ -29,49 +117,15 @@ a:hover {
     color: rgb(242, 180, 115);
 }
 
-
-.highlighted {
-
-    font-size: x-large;
-
-}
-
-/* containers */
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    gap: 2em;
-    padding-top: 10em;
-}
-
-
-.main {
-
-    text-align: center;
-
-}
-
-.links {
-
-    display: flex;
-    gap: 10px;
-
-
-}
-
-/* ... */
-
 hr {
-    margin: 20px auto;
-    color: #f05f44;
-    border: 3px solid #f05f44;
-    max-width: 65px;
+    /* margin: 20px auto; */
+    /* color: #f05f44; */
+    border: 0.5px dashed darkgray;
+    max-width: 60vw;
     opacity: 1;
 }
 
+/* icons */
 .icon {
     text-decoration: none;
     border-bottom: none;
@@ -81,7 +135,7 @@ hr {
 .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    display: inline-block;
+    display: inline;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -89,7 +143,7 @@ hr {
     text-transform: none !important;
     font-family: 'Font Awesome 6 Free';
     font-weight: 400;
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .icon:before {
